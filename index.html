@@ -7,13 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* REVISED Color Palette: Green, Golden, Earthy, White - Nature & Gold Theme */
-            --primary-color: #4A7C59; /* Muted Forest Green - Main Brand Green */
-            --accent-color: #D4AF37; /* Goldenrod - For highlights, prices, accents */
-            --secondary-color: #A3C1AD; /* Sage Green - Lighter green for backgrounds/subtle elements */
-            --background-color: #FBF8F0; /* Creamy Off-White - Soft, warm background */
-            --text-color: #3D3D3D; /* Dark Charcoal - Earthy dark grey for text */
-            --white: #FFFFFF; /* Pure white, for crisp contrast */
+            /* REVISED Color Palette: Brighter Green, Golden, Earthy, White */
+            --primary-color: #5cb85c; /* Brighter Forest Green */
+            --accent-color: #D4AF37; /* Goldenrod */
+            --secondary-color: #c1f0c1; /* Very Light Green */
+            --background-color: #FBF8F0; /* Creamy Off-White */
+            --text-color: #3D3D3D; /* Dark Charcoal */
+            --white: #FFFFFF; /* Pure white */
         }
 
         body {
@@ -27,7 +27,7 @@
         }
 
         header {
-            background: var(--primary-color); /* Deep green header */
+            background: var(--primary-color); /* Brighter green header */
             color: var(--white);
             padding: 1.5rem 0;
             text-align: center;
@@ -39,7 +39,7 @@
         }
 
         header img {
-            max-height: 80px; /* Adjust logo size as needed */
+            max-height: 80px;
             width: auto;
         }
 
@@ -60,7 +60,6 @@
         .hero {
             position: relative;
             height: 450px;
-            /* Using '1.jpg' as background for hero section */
             background: url('1.jpg') no-repeat center center/cover;
             background-position: center center;
             display: flex;
@@ -78,7 +77,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0,0,0,0.5); /* Slightly darker overlay for text readability */
+            background: rgba(0,0,0,0.5);
         }
 
         .hero-content {
@@ -109,7 +108,7 @@
         }
 
         .section {
-            background: var(--white); /* Sections will have a crisp white background */
+            background: var(--white);
             padding: 3rem;
             margin-bottom: 2.5rem;
             border-radius: 10px;
@@ -119,7 +118,6 @@
         }
 
         #blessed-ingredients {
-            /* Using '2.jpg' as background for Blessed Ingredients section */
             background: url('2.jpg') no-repeat center center/cover;
             background-position: center center;
             color: var(--text-color);
@@ -132,7 +130,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255, 255, 255, 0.7); /* White overlay for readability */
+            background: rgba(255, 255, 255, 0.7);
             z-index: 0;
         }
         #blessed-ingredients * {
@@ -143,7 +141,7 @@
 
         h2 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-color); /* Main headings in Forest Green */
+            color: var(--primary-color); /* Brighter Forest Green headings */
             text-align: center;
             margin-bottom: 2rem;
             font-size: 2.5rem;
@@ -159,7 +157,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: var(--accent-color); /* Underline in Goldenrod */
+            background: var(--accent-color);
             border-radius: 2px;
         }
 
@@ -186,8 +184,8 @@
         }
 
         .category-card {
-            background: var(--secondary-color); /* Sage Green category cards */
-            color: var(--text-color); /* Dark text on lighter green */
+            background: var(--secondary-color); /* Very Light Green category cards */
+            color: var(--text-color);
             border-radius: 10px;
             padding: 2rem;
             text-align: center;
@@ -203,13 +201,13 @@
 
         .category-card h3 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-color); /* Category titles in Forest Green */
+            color: var(--primary-color); /* Brighter Forest Green category titles */
             margin-top: 0;
             font-size: 1.8rem;
             margin-bottom: 1rem;
         }
         .category-card p {
-            color: var(--text-color); /* Ensure text is readable */
+            color: var(--text-color);
         }
 
         .product-grid {
@@ -252,7 +250,7 @@
 
         .product-card h3 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-color); /* Product titles in Forest Green */
+            color: var(--primary-color); /* Brighter Forest Green product titles */
             margin-top: 0;
             font-size: 1.6rem;
             margin-bottom: 0.8rem;
@@ -260,7 +258,7 @@
 
         .product-card p {
             font-size: 1rem;
-            color: var(--text-color); /* Body text in Dark Charcoal */
+            color: var(--text-color);
             margin-bottom: 1.2rem;
             flex-grow: 1;
         }
@@ -268,7 +266,7 @@
         .product-card .price {
             font-size: 1.4rem;
             font-weight: bold;
-            color: var(--accent-color); /* Prices in Goldenrod */
+            color: var(--accent-color);
             margin-top: auto;
             text-align: right;
         }
@@ -277,7 +275,6 @@
             position: relative;
             text-align: center;
             padding: 4rem 1rem;
-            /* Using 'gift wrapped dryfruits, seeds, nuts.jpg' as background for Call to Action */
             background: url('gift wrapped dryfruits, seeds, nuts.jpg') no-repeat center center/cover;
             background-position: center center;
             color: var(--white);
@@ -294,7 +291,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.4); /* Darker overlay for text readability */
+            background: rgba(0, 0, 0, 0.4);
             z-index: 0;
         }
         .call-to-action * {
@@ -319,8 +316,8 @@
 
         .contact-button {
             display: inline-block;
-            background: var(--accent-color); /* Button background in Goldenrod */
-            color: var(--text-color); /* Button text in Dark Charcoal */
+            background: var(--accent-color);
+            color: var(--text-color);
             padding: 1rem 3rem;
             border-radius: 8px;
             text-decoration: none;
@@ -330,12 +327,12 @@
         }
 
         .contact-button:hover {
-            background: #e6a700; /* Slightly darker gold on hover */
+            background: #e6a700;
             transform: translateY(-2px);
         }
 
         footer {
-            background: var(--text-color); /* Footer background in Dark Charcoal */
+            background: var(--text-color);
             color: rgba(255,255,255,0.8);
             text-align: center;
             padding: 2rem 0;
@@ -353,11 +350,11 @@
         }
 
         #blessed-ingredients li {
-            background: var(--secondary-color); /* Sage Green list items */
-            color: var(--text-color); /* Dark text on lighter green */
+            background: var(--white); /* White background for ingredient boxes */
+            color: var(--text-color);
             padding: 1.5rem;
-            border-left: 5px solid var(--accent-color); /* Goldenrod accent border */
-            border-radius: 8px;
+            border: 1px solid #ddd; /* Subtle border */
+            border-radius: 15px; /* More rounded corners */
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             font-size: 1.05rem;
         }
