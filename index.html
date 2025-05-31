@@ -1,588 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pure Essence Wellness</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            /* REVISED Color Palette: Green, Golden, Earthy, White - Nature & Gold Theme */
-            --primary-color: #4A7C59; /* Muted Forest Green - Main Brand Green */
-            --accent-color: #D4AF37; /* Goldenrod - For highlights, prices, accents */
-            --secondary-color: #A3C1AD; /* Sage Green - Lighter green for backgrounds/subtle elements */
-            --background-color: #FBF8F0; /* Creamy Off-White - Soft, warm background */
-            --text-color: #3D3D3D; /* Dark Charcoal - Earthy dark grey for text */
-            --white: #FFFFFF; /* Pure white, for crisp contrast */
-        }
+<div class="product-grid">
+            <div class="product-card" id="immunity-boost-elixir">
+                <img src="Immunity Boost Mix.jpg" alt="Immunity Boost Elixir Product Image">
+                <div class="product-card-content">
+                    <h3>Immunity Boost Elixir</h3>
+                    <p>A potent blend to support the immune system and overall vitality for the whole family.</p>
+                    <span class="price">AED 65</span>
+                </div>
+            </div>
 
-        body {
-            font-family: 'Raleway', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: var(--text-color);
-            line-height: 1.6;
-            background-color: var(--background-color);
-        }
+               <div class="product-card" id="metabolic-balance-mix">
+                <img src="Metabolic Balance Mix for Men.jpg" alt="Metabolic Balance Mix Product Image">
+                <div class="product-card-content">
+                    <h3>Metabolic Balance Mix</h3>
+                    <p>A low-glycemic, high-fiber blend designed to support healthy metabolism and insulin sensitivity, potentially aiding in issues like hair loss related to hormonal imbalance.</p>
+                    <span class="price">AED 75</span>
+                </div>
+            </div>
 
-        header {
-            background: var(--primary-color); /* Deep green header */
-            color: var(--white);
-            padding: 1.5rem 0;
-            text-align: center;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.25);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
+            <div class="product-card" id="radiant-harmony-blend">
+                <img src="Radiant Harmony Blend.jpg" alt="Radiant Harmony Blend Product Image">
+                <div class="product-card-content">
+                    <h3>Radiant Harmony Blend</h3>
+                    <p>A specialized blend to support hormonal balance, skin clarity, and menstrual health, addressing common PCOS concerns.</p>
+                    <span class="price">AED 75</span>
+                </div>
+            </div>
 
-        header img {
-            max-height: 60px; /* Adjust logo size as needed */
-            width: auto;
-        }
+            <div class="product-card" id="youthful-vitality-hair-health">
+                <img src="Youthful Vitality.jpg" alt="Youthful Vitality & Hair Health Product Image">
+                <div class="product-card-content">
+                    <h3>Youthful Vitality & Hair Health</h3>
+                    <p>A nourishing blend to support cognitive function, energy levels, and natural hair growth from within.</p>
+                    <span class="price">AED 70</span>
+                </div>
+            </div>
 
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            margin: 0;
-            font-size: 2.8rem;
-            letter-spacing: 1px;
-        }
+            <div class="product-card" id="little-blossoms-balance-mix">
+                <img src="Little Blossoms.jpg" alt="Little Blossoms Balance Mix Product Image">
+                <div class="product-card-content">
+                    <h3>Little Blossoms Balance Mix</h3>
+                    <p>A gentle blend to provide essential nutrients for healthy development and endocrine system support during formative years.</p>
+                    <span class="price">AED 60</span>
+                </div>
+            </div>
 
-        header p {
-            margin: 0.7rem 0 0;
-            font-size: 1.3rem;
-            font-style: italic;
-            opacity: 0.9;
-        }
+            <div class="product-card" id="nurturing-mama-blend">
+                <img src="Nurturing Mama.jpg" alt="Nurturing Mama Blend Product Image">
+                <div class="product-card-content">
+                    <h3>Nurturing Mama Blend</h3>
+                    <p>A meticulously crafted blend designed to support expecting mothers throughout pregnancy.</p>
+                    <span class="price">AED 70</span>
+                </div>
+            </div>
 
-        .hero {
-            position: relative;
-            height: 450px;
-            /* Using '1.jpg' as a general background image for the hero section */
-            background: url('1.jpg') no-repeat center center/cover;
-            background-position: center center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: var(--white);
-            text-align: center;
-            overflow: hidden;
-        }
+            <div class="product-card" id="lactation-nectar-blend">
+                <img src="Lactation Nectar Blend.jpg" alt="Lactation Nectar Blend Product Image">
+                <div class="product-card-content">
+                    <h3>Lactation Nectar Blend</h3>
+                    <p>A nourishing blend specifically formulated to support healthy lactation and provide essential nutrients for new mothers.</p>
+                    <span class="price">AED 70</span>
+                </div>
+            </div>
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.5); /* Slightly darker overlay for text readability */
-        }
+            <div class="product-card" id="pure-sidr-honey-elixir">
+                <img src="Oil & Nectors.jpg" alt="Pure Sidr Honey Elixir Product Image">
+                <div class="product-card-content">
+                    <h3>Pure Sidr Honey Elixir</h3>
+                    <p>Premium, raw Sidr honey, ethically sourced, for general healing and immune support.</p>
+                    <span class="price">AED 150</span>
+                </div>
+            </div>
 
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            padding: 1rem;
-            max-width: 800px;
-        }
+            <div class="product-card" id="blessed-olive-oil-infusion">
+                <img src="Oil & Nectors.jpg" alt="Blessed Olive Oil Infusion Product Image">
+                <div class="product-card-content">
+                    <h3>Blessed Olive Oil Infusion</h3>
+                    <p>Extra Virgin Olive Oil infused with a hint of Black Seed oil, excellent for skin and hair.</p>
+                    <span class="price">AED 45</span>
+                </div>
+            </div>
 
-        .hero-content h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            margin-bottom: 0.8rem;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-        }
+            <div class="product-card" id="talbina-comfort-porridge-mix">
+                <img src="Talbina Comfort Porridge Mix.jpg" alt="Talbina Comfort Porridge Mix Product Image">
+                <div class="product-card-content">
+                    <h3>Talbina Comfort Porridge Mix</h3>
+                    <p>Easy-to-prepare instant porridge based on traditional remedies for comfort and digestion.</p>
+                    <span class="price">AED 40</span>
+                </div>
+            </div>
 
-        .hero-content p {
-            font-size: 1.6rem;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-            font-weight: 300;
-        }
+            <div class="product-card" id="ajwa-date-nut-energy-chews">
+                <img src="Ajwa Date & Nut Energy Chews.jpg" alt="Ajwa Date & Nut Energy Chews Product Image">
+                <div class="product-card-content">
+                    <h3>Ajwa Date & Nut Energy Chews</h3>
+                    <p>Chewy, naturally sweet bites blending revered Ajwa dates with wholesome nuts for natural energy.</p>
+                    <span class="price">AED 55</span>
+                </div>
+            </div>
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2.5rem auto;
-            padding: 1.5rem;
-        }
+            <div class="product-card" id="fig-raisin-vitality-bites">
+                <img src="Fig & Raisin Vitality Bites for All.jpg" alt="Fig & Raisin Vitality Bites Product Image">
+                <div class="product-card-content">
+                    <h3>Fig & Raisin Vitality Bites</h3>
+                    <p>Soft, nutrient-dense bites featuring the blessed fig and energy-rich raisins for digestion and bone health.</p>
+                    <span class="price">AED 50</span>
+                </div>
+            </div>
 
-        .section {
-            background: var(--white); /* Sections will have a crisp white background */
-            padding: 3rem;
-            margin-bottom: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-            position: relative;
-            overflow: hidden;
-        }
-
-        #blessed-ingredients {
-            background: url('1.jpg') no-repeat center center/cover; /* Blessed Ingredients background */
-            background-position: center center;
-            color: var(--text-color);
-        }
-
-        #blessed-ingredients::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.7); /* White overlay for readability */
-            z-index: 0;
-        }
-        #blessed-ingredients * {
-            position: relative;
-            z-index: 1;
-        }
-
-
-        h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-color); /* Main headings in Forest Green */
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: var(--accent-color); /* Underline in Goldenrod */
-            border-radius: 2px;
-        }
-
-        .about-us, .islamic-inspiration {
-            display: block;
-        }
-
-        .about-us img, .islamic-inspiration img {
-            display: none;
-        }
-
-        .about-us .text, .islamic-inspiration .text {
-            flex: none;
-            min-width: unset;
-            font-size: 1.1rem;
-            text-align: left;
-        }
-
-        .product-categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .category-card {
-            background: var(--secondary-color); /* Sage Green category cards */
-            color: var(--text-color); /* Dark text on lighter green */
-            border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .category-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        .category-card h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-color); /* Category titles in Forest Green */
-            margin-top: 0;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        .category-card p {
-            color: var(--text-color); /* Ensure text is readable */
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-
-        .product-card {
-            background: var(--white);
-            border: 1px solid rgba(0,0,0,0.08);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .product-card-content {
-            padding: 1.8rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .product-card h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-color); /* Product titles in Forest Green */
-            margin-top: 0;
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .product-card p {
-            font-size: 1rem;
-            color: var(--text-color); /* Body text in Dark Charcoal */
-            margin-bottom: 1.2rem;
-            flex-grow: 1;
-        }
-
-        .product-card .price {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: var(--accent-color); /* Prices in Goldenrod */
-            margin-top: auto;
-            text-align: right;
-        }
-
-        .call-to-action {
-            position: relative;
-            text-align: center;
-            padding: 4rem 1rem;
-            background: url('2.jpg') no-repeat center center/cover; /* Call to Action background */
-            background-position: center center;
-            color: var(--white);
-            border-radius: 10px;
-            margin-top: 3rem;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-            overflow: hidden;
-        }
-
-        .call-to-action::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4); /* Darker overlay for text readability */
-            z-index: 0;
-        }
-        .call-to-action * {
-            position: relative;
-            z-index: 1;
-        }
-
-        .call-to-action h2 {
-            color: var(--white);
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-        }
-        .call-to-action h2::after {
-            background: var(--white);
-        }
-
-        .call-to-action p {
-            font-size: 1.3rem;
-            margin-bottom: 2.5rem;
-            font-weight: 300;
-        }
-
-        .contact-button {
-            display: inline-block;
-            background: var(--accent-color); /* Button background in Goldenrod */
-            color: var(--text-color); /* Button text in Dark Charcoal */
-            padding: 1rem 3rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        .contact-button:hover {
-            background: #e6a700; /* Slightly darker gold on hover */
-            transform: translateY(-2px);
-        }
-
-        footer {
-            background: var(--text-color); /* Footer background in Dark Charcoal */
-            color: rgba(255,255,255,0.8);
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-            font-size: 0.95rem;
-        }
-
-        /* Specific section styling */
-        #blessed-ingredients ul {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        #blessed-ingredients li {
-            background: var(--secondary-color); /* Sage Green list items */
-            color: var(--text-color); /* Dark text on lighter green */
-            padding: 1.5rem;
-            border-left: 5px solid var(--accent-color); /* Goldenrod accent border */
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            font-size: 1.05rem;
-        }
-
-        @media (max-width: 768px) {
-            header { flex-direction: column; align-items: center; padding: 1rem 0; gap: 10px; }
-            header img { max-height: 50px; }
-            header h1 { font-size: 2rem; }
-            header p { font-size: 1rem; }
-            .hero { height: 300px; }
-            .hero-content h2 { font-size: 2.8rem; }
-            .hero-content p { font-size: 1.2rem; }
-            .container { margin: 1.5rem auto; padding: 1rem; }
-            .section { padding: 2rem; margin-bottom: 1.5rem; }
-            h2 { font-size: 2rem; margin-bottom: 1.5rem; }
-            .about-us, .islamic-inspiration { flex-direction: column; align-items: flex-start; gap: 2rem; }
-            .about-us img, .islamic-inspiration img { display: none; }
-            .about-us .text, .islamic-inspiration .text { min-width: unset; font-size: 1rem; text-align: left; }
-            .product-grid { gap: 1.5rem; }
-            .product-card img { height: 180px; }
-            .product-card-content { padding: 1.2rem; }
-            .product-card h3 { font-size: 1.4rem; }
-            .product-card p { font-size: 0.9rem; }
-            .product-card .price { font-size: 1.2rem; }
-            .call-to-action { padding: 3rem 1rem; }
-            .call-to-action h2 { font-size: 2.2rem; }
-            .call-to-action p { font-size: 1.1rem; }
-            .contact-button { padding: 0.8rem 2rem; font-size: 1rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <img src="Logo.png" alt="Pure Essence Wellness Logo">
-        <div>
-            <h1>Pure Essence Wellness</h1>
-            <p>Nourish Body & Soul, Naturally.</p>
+            <div class="product-card" id="tiny-tummies-soothe-mix">
+                <img src="Tiny Tummies Soothe.jpg" alt="Tiny Tummies Soothe Mix Product Image">
+                <div class="product-card-content">
+                    <h3>Tiny Tummies Soothe Mix</h3>
+                    <p>A very finely milled, gentle blend supporting healthy digestion and providing gentle nourishment for infants.</p>
+                    <span class="price">AED 60</span>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Pure Health, Rooted in Tradition</h2>
-            <p>Embracing timeless wisdom for modern wellness.</p>
-        </div>
-    </section>
-
-    <div class="container">
-        <section id="about-us" class="section about-us">
-            <div class="text">
-                <h2>About Pure Essence Wellness</h2>
-                <p>Pure Essence Wellness is dedicated to producing high-quality, natural health products. We meticulously craft our products based on timeless wisdom and modern scientific understanding, offering pure, effective, and ethically sourced solutions for contemporary health challenges.</p>
-                <p>Our commitment extends to upholding the highest ethics of honesty, transparency, and purity in every step of our operations, ensuring that every product you receive is truly a blessing. Our vision is to become a leading and trusted brand for holistic health products, rooted in natural principles and accessible to families seeking pure wellness solutions.</p>
-            </div>
-        </section>
-
-        <section id="islamic-inspiration" class="section islamic-inspiration">
-            <div class="text">
-                <h2>Rooted in Timeless Wisdom</h2>
-                <p>At Pure Essence Wellness, our philosophy is deeply inspired by timeless traditions and sacred texts that highlight the profound healing and nourishing properties of natural ingredients. We believe in harnessing the power of nature, guided by principles that emphasize purity, efficacy, and holistic well-being.</p>
-                <p>Our approach integrates these revered insights with modern scientific understanding, ensuring our products are not only effective but also align with a natural and ethical lifestyle. Our mission is to meticulously craft natural health products using blessed ingredients from time-honored traditions, applying modern scientific insights, and upholding the highest standards of quality, ethics, and transparency in all our business practices.</p>
-            </div>
-        </section>
-
-        <section id="blessed-ingredients" class="section">
-            <h2>Our Blessed Ingredients</h2>
-            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">Our products are built upon the benefits of ingredients revered across cultures for centuries, recognized for their healing and nourishing properties, and validated by modern science.</p>
-            <ul>
-                <li><strong>Black Seed (Nigella Sativa / Habbatus Sauda):</strong> Known for its potent health benefits.</li>
-                <li><strong>Honey (especially Sidr Honey):</strong> Revered for its healing properties.</li>
-                <li><strong>Olive Oil (Zaitoon):</strong> Valued for its health and nutritional benefits.</li>
-                <li><strong>Dates (especially Ajwa Dates):</strong> Known for their energy and nutritional value.</li>
-                <li><strong>Barley (for Talbina):</strong> A traditional and nourishing grain.</li>
-                <li><strong>Figs (Teen):</strong> Appreciated for their health benefits.</li>
-                <li><strong>Grapes/Raisins (A'nab):</strong> Rich in antioxidants and natural energy.</li>
-            </ul>
-        </section>
-
-        <section id="products" class="section">
-            <h2>Our Product Lines</h2>
-            <div class="product-categories">
-                <div class="category-card">
-                    <h3>Pure Essence Superfood Blends</h3>
-                    <p>Nutrient-dense powders & granules for holistic health.</p>
-                </div>
-                <div class="category-card">
-                    <h3>Pure Essence Nectars & Oils</h3>
-                    <p>Pure, potent liquid remedies and infusions.</p>
-                </div>
-                <div class="category-card">
-                    <h3>Pure Essence Wholesome Grains & Snacks</h3>
-                    <p>Comforting porridges and energy-boosting bites.</p>
-                </div>
-            </div>
-
-            <h3 style="text-align: center; color: var(--secondary-color); margin-top: 3.5rem; font-size: 2rem;">Our Products</h3>
-            <div class="product-grid">
-                <div class="product-card" id="immunity-boost-elixir">
-                    <img src="Immunity Boost Mix.jpg" alt="Immunity Boost Elixir Product Image">
-                    <div class="product-card-content">
-                        <h3>Immunity Boost Elixir</h3>
-                        <p>A potent blend to support the immune system and overall vitality for the whole family.</p>
-                        <span class="price">AED 65</span>
-                    </div>
-                </div>
-
-                   <div class="product-card" id="metabolic-balance-mix">
-                    <img src="Metabolic Balance Mix for Men.jpg" alt="Metabolic Balance Mix Product Image">
-                    <div class="product-card-content">
-                        <h3>Metabolic Balance Mix</h3>
-                        <p>A low-glycemic, high-fiber blend designed to support healthy metabolism and insulin sensitivity, potentially aiding in issues like hair loss related to hormonal imbalance.</p>
-                        <span class="price">AED 75</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="radiant-harmony-blend">
-                    <img src="Radiant Harmony Blend.jpg" alt="Radiant Harmony Blend Product Image">
-                    <div class="product-card-content">
-                        <h3>Radiant Harmony Blend</h3>
-                        <p>A specialized blend to support hormonal balance, skin clarity, and menstrual health, addressing common PCOS concerns.</p>
-                        <span class="price">AED 75</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="youthful-vitality-hair-health">
-                    <img src="Youthful Vitality.jpg" alt="Youthful Vitality & Hair Health Product Image">
-                    <div class="product-card-content">
-                        <h3>Youthful Vitality & Hair Health</h3>
-                        <p>A nourishing blend to support cognitive function, energy levels, and natural hair growth from within.</p>
-                        <span class="price">AED 70</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="little-blossoms-balance-mix">
-                    <img src="Little Blossoms.jpg" alt="Little Blossoms Balance Mix Product Image">
-                    <div class="product-card-content">
-                        <h3>Little Blossoms Balance Mix</h3>
-                        <p>A gentle blend to provide essential nutrients for healthy development and endocrine system support during formative years.</p>
-                        <span class="price">AED 60</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="nurturing-mama-blend">
-                    <img src="Nurturing Mama.jpg" alt="Nurturing Mama Blend Product Image">
-                    <div class="product-card-content">
-                        <h3>Nurturing Mama Blend</h3>
-                        <p>A meticulously crafted blend designed to support expecting mothers throughout pregnancy.</p>
-                        <span class="price">AED 70</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="lactation-nectar-blend">
-                    <img src="Lactation Nectar Blend.jpg" alt="Lactation Nectar Blend Product Image">
-                    <div class="product-card-content">
-                        <h3>Lactation Nectar Blend</h3>
-                        <p>A nourishing blend specifically formulated to support healthy lactation and provide essential nutrients for new mothers.</p>
-                        <span class="price">AED 70</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="pure-sidr-honey-elixir">
-                    <img src="Oil & Nectors.jpg" alt="Pure Sidr Honey Elixir Product Image">
-                    <div class="product-card-content">
-                        <h3>Pure Sidr Honey Elixir</h3>
-                        <p>Premium, raw Sidr honey, ethically sourced, for general healing and immune support.</p>
-                        <span class="price">AED 150</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="blessed-olive-oil-infusion">
-                    <img src="Oil & Nectors.jpg" alt="Blessed Olive Oil Infusion Product Image">
-                    <div class="product-card-content">
-                        <h3>Blessed Olive Oil Infusion</h3>
-                        <p>Extra Virgin Olive Oil infused with a hint of Black Seed oil, excellent for skin and hair.</p>
-                        <span class="price">AED 45</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="talbina-comfort-porridge-mix">
-                    <img src="Talbina Comfort Porridge Mix.jpg" alt="Talbina Comfort Porridge Mix Product Image">
-                    <div class="product-card-content">
-                        <h3>Talbina Comfort Porridge Mix</h3>
-                        <p>Easy-to-prepare instant porridge based on traditional remedies for comfort and digestion.</p>
-                        <span class="price">AED 40</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="ajwa-date-nut-energy-chews">
-                    <img src="Ajwa Date & Nut Energy Chews.jpg" alt="Ajwa Date & Nut Energy Chews Product Image">
-                    <div class="product-card-content">
-                        <h3>Ajwa Date & Nut Energy Chews</h3>
-                        <p>Chewy, naturally sweet bites blending revered Ajwa dates with wholesome nuts for natural energy.</p>
-                        <span class="price">AED 55</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="fig-raisin-vitality-bites">
-                    <img src="Fig & Raisin Vitality Bites for All.jpg" alt="Fig & Raisin Vitality Bites Product Image">
-                    <div class="product-card-content">
-                        <h3>Fig & Raisin Vitality Bites</h3>
-                        <p>Soft, nutrient-dense bites featuring the blessed fig and energy-rich raisins for digestion and bone health.</p>
-                        <span class="price">AED 50</span>
-                    </div>
-                </div>
-
-                <div class="product-card" id="tiny-tummies-soothe-mix">
-                    <img src="Tiny Tummies Soothe.jpg" alt="Tiny Tummies Soothe Mix Product Image">
-                    <div class="product-card-content">
-                        <h3>Tiny Tummies Soothe Mix</h3>
-                        <p>A very finely milled, gentle blend supporting healthy digestion and providing gentle nourishment for infants.</p>
-                        <span class="price">AED 60</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="call-to-action">
-            <h2>Ready to Nourish Your Body & Soul?</h2>
-            <p>Connect with us today to learn more or place your order for pure, natural wellness solutions.</p>
-            <a href="https://wa.me/YOURWHATSAPPNUMBER" class="contact-button" target="_blank">Contact Us via WhatsApp</a>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Pure Essence Wellness. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
