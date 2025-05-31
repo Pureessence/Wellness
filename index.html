@@ -271,6 +271,46 @@
             text-align: right;
         }
 
+        /* Styles for product details and button */
+        .product-card .view-details-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+            align-self: center; /* Center the button in flex column */
+        }
+
+        .product-card .view-details-btn:hover {
+            background-color: #4CAF50; /* Slightly darker green */
+        }
+
+        .product-details-extended {
+            padding: 1.8rem;
+            padding-top: 0; /* Remove top padding to make it flow from above content */
+            border-top: 1px solid rgba(0,0,0,0.05);
+            margin-top: 1rem;
+            display: none; /* Hidden by default */
+        }
+
+        .product-details-extended h4 {
+            font-family: 'Raleway', sans-serif; /* Use Raleway for sub-headings */
+            color: var(--primary-color);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .product-details-extended p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+        }
+
         .call-to-action {
             position: relative;
             text-align: center;
@@ -383,6 +423,9 @@
             .call-to-action h2 { font-size: 2.2rem; }
             .call-to-action p { font-size: 1.1rem; }
             .contact-button { padding: 0.8rem 2rem; font-size: 1rem; }
+             /* Adjustments for product details on smaller screens */
+            .product-details-extended h4 { font-size: 1rem; }
+            .product-details-extended p { font-size: 0.85rem; }
         }
     </style>
 </head>
@@ -459,6 +502,21 @@
                         <h3>Immunity Boost Elixir</h3>
                         <p>A potent blend to support the immune system and overall vitality for the whole family.</p>
                         <span class="price">AED 65</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>General Family Wellness (Adults & Kids)</p>
+                        <h4>Description:</h4>
+                        <p>A potent blend to support the immune system and overall vitality.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ground Black Seed, Ground Flax Seed, Ground Pumpkin Seed, Freeze-dried Date powder (minimal), a hint of Cinnamon.</p>
+                        <h4>Benefits:</h4>
+                        <p>General wellness, immune support, sustained energy.</p>
+                        <h4>Usage:</h4>
+                        <p>Mix into smoothies, yogurt, oatmeal, or beverages.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -468,6 +526,21 @@
                         <h3>Metabolic Balance Mix</h3>
                         <p>A low-glycemic, high-fiber blend designed to support healthy metabolism and insulin sensitivity, potentially aiding in issues like hair loss related to hormonal imbalance.</p>
                         <span class="price">AED 75</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Men seeking blood sugar and hormonal balance, addressing PCOS-like symptoms.</p>
+                        <h4>Description:</h4>
+                        <p>A low-glycemic, high-fiber blend designed to support healthy metabolism and insulin sensitivity, potentially aiding in issues like hair loss related to hormonal imbalance.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ground Flax Seeds, Ground Chia Seeds, Ground Walnuts, finely chopped unsweetened Dried Apricots (small amount), Black Seed powder, Ground Fenugreek, Stevia.</p>
+                        <h4>Benefits:</h4>
+                        <p>Omega-3s, high fiber for blood sugar stability, anti-inflammatory (Flax/Chia/Walnuts). General metabolic and hormonal support, potential hair health (Black Seed). Traditional use for blood sugar control (Fenugreek). Fiber, minimal natural sugar (Apricots).</p>
+                        <h4>Usage:</h4>
+                        <p>Sprinkle on salads, add to plain yogurt, blend into protein shakes.</p>
+                        <h4>Availability:</h4>
+                        <p>Made-to-Order</p>
                     </div>
                 </div>
 
@@ -477,6 +550,21 @@
                         <h3>Radiant Harmony Blend</h3>
                         <p>A specialized blend to support hormonal balance, skin clarity, and menstrual health, addressing common PCOS concerns.</p>
                         <span class="price">AED 75</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Women managing PCOS symptoms, seeking hormonal equilibrium.</p>
+                        <h4>Description:</h4>
+                        <p>A specialized blend to support hormonal balance, skin clarity, and menstrual health, addressing common PCOS concerns.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ground Flax Seeds, Ground Pumpkin Seeds, Ground Sesame Seeds, Ground Sunflower Seeds (seed cycling inspired), Spearmint powder, Black Seed powder, Stevia.</p>
+                        <h4>Benefits:</h4>
+                        <p>Supports estrogen and progesterone balance (seed cycling principles). May help reduce androgen levels, beneficial for hirsutism and acne common in PCOS (Spearmint). Anti-inflammatory, overall hormonal support (Black Seed). Aids digestion and hormone elimination (Fiber).</p>
+                        <h4>Usage:</h4>
+                        <p>Integrate into daily routine (e.g., specific seed rotation per menstrual phase as per seed cycling), add to smoothies, yogurt.</p>
+                        <h4>Availability:</h4>
+                        <p>Made-to-Order</p>
                     </div>
                 </div>
 
@@ -486,6 +574,21 @@
                         <h3>Youthful Vitality & Hair Health</h3>
                         <p>A nourishing blend to support cognitive function, energy levels, and natural hair growth from within.</p>
                         <span class="price">AED 70</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Elderly individuals seeking vitality, cognitive support, and combating hair loss.</p>
+                        <h4>Description:</h4>
+                        <p>A nourishing blend to support cognitive function, energy levels, and natural hair growth from within.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ground Walnuts, Ground Pumpkin Seeds (Zinc), Ground Flax Seeds (Omega-3), Black Seed powder, Dried Amla (Indian Gooseberry) powder, a hint of powdered Ginger.</p>
+                        <h4>Benefits:</h4>
+                        <p>Omega-3s for brain health, memory, anti-inflammatory (Walnuts/Flax). Zinc and essential fatty acids for hair follicle strength and reducing inflammation related to hair loss (Pumpkin Seeds/Black Seed). Rich in Vitamin C, antioxidant, traditionally used for hair growth and combating premature greying (Amla). Circulation, anti-inflammatory (Ginger).</p>
+                        <h4>Usage:</h4>
+                        <p>Mix with warm milk, add to oatmeal, or sprinkle on soft foods.</p>
+                        <h4>Availability:</h4>
+                        <p>Made-to-Order</p>
                     </div>
                 </div>
 
@@ -495,6 +598,21 @@
                         <h3>Little Blossoms Balance Mix</h3>
                         <p>A gentle blend to provide essential nutrients for healthy development and endocrine system support during formative years.</p>
                         <span class="price">AED 60</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Children (8-12) to support healthy growth and emerging hormonal balance.</p>
+                        <h4>Description:</h4>
+                        <p>A gentle blend to provide essential nutrients for healthy development and endocrine system support during formative years.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ground Sunflower Seeds (Vitamin E), Ground Sesame Seeds (Calcium), Ground Chia Seeds (Omega-3, Fiber), small amount of Date powder, a touch of Vanilla Bean powder.</p>
+                        <h4>Benefits:</h4>
+                        <p>Provide essential fatty acids and minerals (Zinc, Vitamin E, Calcium) crucial for growing bodies and healthy endocrine function (Seeds). Brain development and cognitive health (Omega-3s). Digestive regularity (Fiber). Appeals to kids (Natural Sweetness).</p>
+                        <h4>Usage:</h4>
+                        <p>Stir into yogurt, mix with cereal, add to homemade muffins or pancakes.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -504,6 +622,21 @@
                         <h3>Nurturing Mama Blend</h3>
                         <p>A meticulously crafted blend designed to support expecting mothers throughout pregnancy.</p>
                         <span class="price">AED 70</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Pregnant Women</p>
+                        <h4>Description:</h4>
+                        <p>A meticulously crafted blend designed to support expecting mothers by providing vital nutrients, sustained energy, and comforting nourishment throughout pregnancy. Rooted in blessed ingredients, it promotes holistic well-being for both mother and baby.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Powdered Dates, Ground Flax Seeds, Ground Walnuts, Ground Almonds, Powdered Figs, a hint of powdered Ginger.</p>
+                        <h4>Benefits:</h4>
+                        <p>Sustained Energy (From dates and nuts, helping to combat pregnancy fatigue). Fetal Brain Development (Omega-3s from walnuts and flax seeds). Bone Health (Calcium and magnesium from almonds and figs for mother and baby). Digestive Comfort (High fiber content helps alleviate common pregnancy constipation). Overall Nourishment (Rich in essential vitamins and minerals crucial during pregnancy).</p>
+                        <h4>Usage:</h4>
+                        <p>Mix 1-2 tablespoons daily into smoothies, yogurt, oatmeal, or blend into warm milk.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -513,6 +646,21 @@
                         <h3>Lactation Nectar Blend</h3>
                         <p>A nourishing blend specifically formulated to support healthy lactation and provide essential nutrients for new mothers.</p>
                         <span class="price">AED 70</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Nursing Mothers</p>
+                        <h4>Description:</h4>
+                        <p>A nourishing blend specifically formulated to support healthy lactation and provide essential nutrients for new mothers. It aids in milk production while helping mothers maintain energy and recover postpartum, guided by traditional wisdom.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ground Fenugreek Seeds, Fine Oat Flour, Ground Flax Seeds, Powdered Dates, a hint of powdered Fennel.</p>
+                        <h4>Benefits:</h4>
+                        <p>Lactation support (Fenugreek and oats are traditionally recognized galactagogues). Sustained Energy (Dates and oats provide complex carbohydrates and natural sugars). Postpartum Recovery (Provides essential nutrients to aid the body's recovery process). Digestive Health (High fiber content supports digestive regularity). Omega-3s (From flax, beneficial for both mother and baby).</p>
+                        <h4>Usage:</h4>
+                        <p>Stir 1-2 tablespoons into oatmeal, smoothies, or mix into warm milk/tea.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -522,6 +670,21 @@
                         <h3>Pure Sidr Honey Elixir</h3>
                         <p>Premium, raw Sidr honey, ethically sourced, for general healing and immune support.</p>
                         <span class="price">AED 150</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>All ages.</p>
+                        <h4>Description:</h4>
+                        <p>Premium, raw Sidr honey, ethically sourced.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>100% Pure Raw Sidr Honey.</p>
+                        <h4>Benefits:</h4>
+                        <p>General healing, immune support, digestive aid.</p>
+                        <h4>Usage:</h4>
+                        <p>A spoonful daily, in warm water, or as a natural sweetener.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -531,6 +694,21 @@
                         <h3>Blessed Olive Oil Infusion</h3>
                         <p>Extra Virgin Olive Oil infused with a hint of Black Seed oil, excellent for skin and hair.</p>
                         <span class="price">AED 45</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>All ages.</p>
+                        <h4>Description:</h4>
+                        <p>Extra Virgin Olive Oil infused with a hint of Black Seed oil.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>High-quality Extra Virgin Olive Oil, small percentage of Cold-Pressed Black Seed Oil.</p>
+                        <h4>Benefits:</h4>
+                        <p>Heart health, anti-inflammatory, excellent for skin/hair.</p>
+                        <h4>Usage:</h4>
+                        <p>Dressing, drizzling, topical application (skin/hair massage - especially for elderly hair health).</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -540,6 +718,21 @@
                         <h3>Talbina Comfort Porridge Mix</h3>
                         <p>Easy-to-prepare instant porridge based on traditional remedies for comfort and digestion.</p>
                         <span class="price">AED 40</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>All ages.</p>
+                        <h4>Description:</h4>
+                        <p>Easy-to-prepare instant porridge based on traditional remedies for comfort, digestion, and blood sugar regulation.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Fine Barley Flour, a small amount of Date powder, a pinch of Cinnamon.</p>
+                        <h4>Benefits:</h4>
+                        <p>Soothing for digestive upset, emotional comfort, blood sugar regulation.</p>
+                        <h4>Usage:</h4>
+                        <p>Mix with hot milk/water.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -549,6 +742,21 @@
                         <h3>Ajwa Date & Nut Energy Chews</h3>
                         <p>Chewy, naturally sweet bites blending revered Ajwa dates with wholesome nuts for natural energy.</p>
                         <span class="price">AED 55</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Kids (8-12) and adults needing a healthy, quick energy boost.</p>
+                        <h4>Description:</h4>
+                        <p>Chewy, naturally sweet bites blending revered Ajwa dates with wholesome nuts.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Ajwa Dates (pitted and blended), Walnuts, Almonds, a touch of Black Seed.</p>
+                        <h4>Benefits:</h4>
+                        <p>Natural energy, fiber, minerals, brain health.</p>
+                        <h4>Usage:</h4>
+                        <p>Healthy snack, pre/post-workout boost.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -556,8 +764,23 @@
                     <img src="fig & Raisin Vilality Bites for All.png" alt="Fig & Raisin Vitality Bites Product Image">
                     <div class="product-card-content">
                         <h3>Fig & Raisin Vitality Bites</h3>
-                        <p>Soft, nutrient-dense bites featuring the blessed fig and energy-rich raisins for digestion and bone health.</p>
+                        <p>Soft, nutrient-dense bites featuring the blessed fig and energy-rich raisins.</p>
                         <span class="price">AED 50</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>General family wellness, especially elderly for digestion and bone health.</p>
+                        <h4>Description:</h4>
+                        <p>Soft, nutrient-dense bites featuring the blessed fig and energy-rich raisins.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Dried Figs, Raisins (unsweetened), a small amount of crushed Walnuts, a hint of Orange zest.</p>
+                        <h4>Benefits:</h4>
+                        <p>High fiber for digestion, calcium for bone health (Figs). Quick energy, antioxidants (Raisins). Omega-3s (Walnuts).</p>
+                        <h4>Usage:</h4>
+                        <p>Sweet treat, digestive aid.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
 
@@ -567,6 +790,21 @@
                         <h3>Tiny Tummies Soothe Mix</h3>
                         <p>A very finely milled, gentle blend supporting healthy digestion and providing gentle nourishment for infants.</p>
                         <span class="price">AED 60</span>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="product-details-extended">
+                        <h4>Target Audience:</h4>
+                        <p>Teething Infants (6+ Months, upon pediatrician's approval for solids)</p>
+                        <h4>Description:</h4>
+                        <p>A very finely milled, gentle, and nutrient-dense blend designed to be a comforting addition to an infant's first foods. It supports healthy digestion and provides gentle nourishment during the teething phase.</p>
+                        <h4>Key Ingredients:</h4>
+                        <p>Fine Barley Flour, Finely Ground Oats, very minimal Powdered Dates.</p>
+                        <h4>Benefits:</h4>
+                        <p>Gentle nourishment (Easy-to-digest blend for sensitive infant tummies). Calming properties (Barley is known for its soothing effects). Digestive support (Soluble fiber aids healthy gut development and regularity). Natural sweetness (Dates provide a subtle, natural sweetness). Rich in minerals (Provides essential minerals from grains and dates).</p>
+                        <h4>Usage:</h4>
+                        <p>Stir ½ - 1 teaspoon into warm purees, baby food, or mix with breast milk/formula. Always consult your pediatrician before introducing new foods to infants.</p>
+                        <h4>Availability:</h4>
+                        <p>Ready-to-Ship</p>
                     </div>
                 </div>
             </div>
@@ -582,6 +820,23 @@
     <footer>
         <p>&copy; 2024 Pure Essence Wellness. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.view-details-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.product-card');
+                    const details = productCard.querySelector('.product-details-extended');
+                    if (details) {
+                        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+                        this.textContent = details.style.display === 'block' ? 'Hide Details' : 'View Details';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
